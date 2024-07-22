@@ -20,6 +20,7 @@ class DataIngestion:
         self.ingestion_config = DataIngenstionConfig()
 
     def initiate_data_ingestion(self):
+
         logging.info("Entered the data ingestion method or component")
         
         try:
