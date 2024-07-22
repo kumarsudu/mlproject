@@ -1,3 +1,22 @@
 Krish Naik - End to End project series 
 
 https://www.youtube.com/watch?v=Rv6UFGNmNZg&list=PLZoTAELRMXVPS-dOaVbAux22vzqdgoGhG&index=3
+
+
+https://905418139343.signin.aws.amazon.com/console
+
+905418139343
+
+Test-User-1
+
+Testuser@567
+
+EC2
+----
+my-first-instance 
+
+Key pair : aws_firstec2_login
+
+Public IPV4 : 54.172.204.120
+
+
