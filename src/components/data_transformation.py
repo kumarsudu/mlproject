@@ -27,7 +27,8 @@ class DataTransformation:
     def __init__(self):
         self.data_transformation_config = DataTransformationConfig()
 
-    # All the pickle files which will be responsible for converting the categorical features into numerical
+    # All the pickle files which will be responsible for converting the categorical features 
+    # into numerical
     # if you want to perform a standard scalar and etc.
     def get_data_transformer_object(self):
         '''
@@ -58,8 +59,14 @@ class DataTransformation:
             # Converting categorical to numerical value using OneHotEncoding 
             # This pipeline should run on training dataset
             ''' StandardScaler(with_mean=False)
-                The reason that adding with_mean=False resolved my error is that the StandardScaler is subtracting the mean from each feature, which can result in some features having negative values. However, StandardScaler() alone assumes that the features have positive values, which can cause issues when working with features that have negative values.
-                By setting with_mean=False, the StandardScaler does not subtract the mean from each feature, and instead scales the features based on their variance. This can help preserve the positive values of the features and avoid issues.
+                The reason that adding with_mean=False resolved my error 
+                is that the StandardScaler is subtracting the mean from each feature, 
+                which can result in some features having negative values. 
+                However, StandardScaler() alone assumes that the features have positive values, 
+                which can cause issues when working with features that have negative values.
+                By setting with_mean=False, the StandardScaler does not subtract the mean 
+                from each feature, and instead scales the features based on their variance. 
+                This can help preserve the positive values of the features and avoid issues.
             '''
             cat_pipeline = Pipeline(
                 steps = [
